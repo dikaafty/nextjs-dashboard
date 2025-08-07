@@ -4,7 +4,9 @@ import LatestInvoices from "../ui/dashboard/latest-invoices";
 import { lusitana } from "../ui/fonts";
 import { fetchRevenue } from "../lib/data";
 
-export default function Page() {
+export default async function Page() {
+  const revenue = await fetchRevenue();
+
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
