@@ -6,7 +6,7 @@ import { lusitana } from "@/app/ui/fonts";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 
-export default function Page(props: {
+export default async function Page(props: {
   searchParams?: Promise<{
     query?: string;
     params?: string;
