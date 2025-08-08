@@ -12,6 +12,8 @@ export default async function Page(props: {
     params?: string;
   }>;
 }) {
+  const searchParams = await props.searchParams;
+
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
