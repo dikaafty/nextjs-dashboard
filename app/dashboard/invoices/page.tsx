@@ -6,7 +6,12 @@ import { lusitana } from "@/app/ui/fonts";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 
-export default function Page() {
+export default function Page(props: {
+  searchParams?: Promise<{
+    query?: string;
+    params?: string;
+  }>;
+}) {
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
