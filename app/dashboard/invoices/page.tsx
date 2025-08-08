@@ -9,7 +9,7 @@ import { Suspense } from "react";
 export default async function Page(props: {
   searchParams?: Promise<{
     query?: string;
-    params?: string;
+    page?: string;
   }>;
 }) {
   const searchParams = await props.searchParams;
