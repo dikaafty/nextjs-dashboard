@@ -13,6 +13,7 @@ export default async function Page(props: {
   }>;
 }) {
   const searchParams = await props.searchParams;
+  const query = searchParams?.query || "";
 
   return (
     <div className="w-full">
