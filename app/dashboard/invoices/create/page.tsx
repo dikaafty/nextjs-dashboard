@@ -1,0 +1,1 @@
+import Form from "@/app/ui/invoices/create-form";
