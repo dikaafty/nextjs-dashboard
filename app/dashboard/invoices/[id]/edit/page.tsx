@@ -3,6 +3,8 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
+
   return (
     <main>
       <Breadcrumbs
