@@ -3,5 +3,9 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
 
 export default function Page() {
-  
+  return (
+    <main>
+      
+    </main>
+  );
 }
