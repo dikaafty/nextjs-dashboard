@@ -15,6 +15,7 @@ export default function Page() {
           },
         ]}
       />
+      <Form invoice={invoice} customers={customers} />
     </main>
   );
 }
